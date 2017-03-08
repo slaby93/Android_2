@@ -6,4 +6,7 @@
     <string name="change_color_button">Change Color</string>
     <string name="Hello">Hello</string>
     <string name="Stranger">Stranger</string>
+    <string name="RED">red</string>
+    <string name="GREEN">green</string>
+    <string name="BLUE">BLUE</string>
 </resources>

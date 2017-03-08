@@ -1,6 +1,8 @@
 package com.example.slaby.android_2;
 
 import android.graphics.Color;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,17 +36,18 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.changeColorButton).setVisibility(View.VISIBLE);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     public void onChangeColorClick(View view) {
         TextView helloText = (TextView) findViewById(R.id.helloText);
 
-        if (helloText.getCurrentTextColor() == Color.GREEN) {
-            helloText.setTextColor(Color.RED);
+        if (helloText.getCurrentTextColor() == getResources().getColor(R.color.GREEN, getTheme())) {
+            helloText.setTextColor(getResources().getColor(R.color.RED, getTheme()));
 
-        } else if (helloText.getCurrentTextColor() == Color.RED) {
-            helloText.setTextColor(Color.BLUE);
+        } else if (helloText.getCurrentTextColor() == getResources().getColor(R.color.RED, getTheme())) {
+            helloText.setTextColor(getResources().getColor(R.color.BLUE, getTheme()));
 
         } else {
-            helloText.setTextColor(Color.GREEN);
+            helloText.setTextColor(getResources().getColor(R.color.GREEN, getTheme()));
 
         }
     }
