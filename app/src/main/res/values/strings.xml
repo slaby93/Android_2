@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android_2</string>
+    <string name="Input_text">Give me your name</string>
+    <string name="default_input_text">name</string>
+    <string name="default_button_text">START</string>
+    <string name="change_color_button">Change Color</string>
+    <string name="Hello">Hello</string>
+    <string name="Stranger">Stranger</string>
+</resources>

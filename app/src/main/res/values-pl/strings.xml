@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android_2</string>
+    <string name="Input_text">Podaj swoje imie</string>
+    <string name="default_input_text">Imie</string>
+    <string name="default_button_text">START</string>
+    <string name="change_color_button">Zmien Kolor</string>
+    <string name="Hello">Witaj</string>
+    <string name="Stranger">Nieznajomy</string>
+</resources>
