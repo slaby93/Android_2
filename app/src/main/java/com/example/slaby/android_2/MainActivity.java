@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         if (input.getText().length() > 0) {
             finalText += " " + input.getText();
         } else {
-            finalText += " " + (String) getResources().getText(R.string.Stranger);
+            finalText += " " + getResources().getText(R.string.Stranger);
         }
 
         helloText.setText(finalText);
