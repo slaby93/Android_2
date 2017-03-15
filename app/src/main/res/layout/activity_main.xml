@@ -10,22 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.slaby.android_2.MainActivity">
 
-    <FrameLayout
-        android:id="@+id/center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/bottomContainer"
-        android:layout_below="@+id/topContainer">
-
-        <TextView
-            android:id="@+id/helloText"
-            android:layout_width="match_parent"
-            android:layout_height="69dp"
-            android:textAlignment="center"
-            android:layout_gravity="center"
-            />
-    </FrameLayout>
-
     <LinearLayout
         android:id="@+id/bottomContainer"
         android:layout_width="match_parent"
@@ -47,15 +31,6 @@
             android:onClick="onStartClick"
             android:text="@string/default_button_text" />
 
-        <Button
-            android:id="@+id/changeColorButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onChangeColorClick"
-            android:text="@string/change_color_button"
-            android:visibility="invisible"
-            />
     </LinearLayout>
 
     <LinearLayout
@@ -89,5 +64,23 @@
             android:hint="@string/default_input_text"
             android:inputType="textPersonName" />
     </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topContainer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/bottomContainer">
+
+        <TextView
+            android:id="@+id/helloText"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
 
 </RelativeLayout>
